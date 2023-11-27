@@ -1,0 +1,28 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cv.MainPage">
+
+    <StackLayout>
+        <Label Text="nombre" FontSize="Title" />
+        <Editor x:Name="nombreEditor" Placeholder="Ingrese su nombre" HeightRequest="50" />
+
+        <Label Text="apellido" FontSize="Title" />
+        <Editor x:Name="apellidoEditor" Placeholder="Ingrese sus apellidos" HeightRequest="50" />
+
+        <Label Text="Perfil" FontSize="Title" />
+        <Editor x:Name="perfilEditor" Placeholder="Ingrese su perfil" HeightRequest="90" />
+        
+        <Label Text="Contacto" FontSize="Title" />
+        <Entry x:Name="contactoEntry" Placeholder="Ingrese su información de contacto" />
+
+        <Label Text="Idiomas" FontSize="Title" />
+        <Editor x:Name="idiomasEditor" Placeholder="Ingrese sus idiomas" HeightRequest="50" />
+
+        <Label Text="Habilidades" FontSize="Title" />
+        <Editor x:Name="habilidadesEditor" Placeholder="Ingrese sus habilidades" HeightRequest="50" />
+
+
+        <Button Text="Guardar CV" Clicked="OnSaveClicked" />
+    </StackLayout>
+
+</ContentPage>
